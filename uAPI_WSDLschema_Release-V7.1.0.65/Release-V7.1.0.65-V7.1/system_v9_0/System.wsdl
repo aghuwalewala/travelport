@@ -15,7 +15,7 @@
         <soap:binding style="document"
                       transport="http://schemas.xmlsoap.org/soap/http" />
         <operation name="service">
-            <soap:operation soapAction="http://localhost:8080/kestrel/SystemService"/>
+            <soap:operation soapAction="https://americas.universal-api.pp.travelport.com/B2BGateway/connect/uAPI/SystemService"/>
             <input>
                 <soap:body use="literal" />
             </input>
@@ -88,7 +88,7 @@
     <service name="SystemService">       
         <port name="SystemPingPort" binding="tns:SystemPingBinding">
             <soap:address
-                    location="http://localhost:8080/kestrel/SystemService" />
+                    location="https://americas.universal-api.pp.travelport.com/B2BGateway/connect/uAPI/SystemService" />
         </port>
         <port name="SystemInfoPort" binding="tns:SystemInfoBinding">
             <soap:address
